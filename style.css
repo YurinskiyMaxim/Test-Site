@@ -3,14 +3,34 @@
     padding: 24px 0 0 0;
     height: 40px;
 }
-.img:nth-child(n+1){
+.header__menu{
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 100%;
+    --icon__color: #ff3e79;
+    background-color: var(--icon__color);
     margin-left: 21px;
 }
+.header__cps{
+    height: 40px;
+    width: 40px;
+    border: none;
+    margin-left: 16px;
+}
 #square{
-    margin: 5px 0 0 17px;
+    margin: 5px 0 0 80px;
     width: 2px;
     height: 32px;
     background-color:#EAEAEA ;
+}
+.header__support--icon{
+    margin-left: 16px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: none;
+    background-color: var(--icon__color);
 }
 .header__separation{
     margin-top: 24px;
