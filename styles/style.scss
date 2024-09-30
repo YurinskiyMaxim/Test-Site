@@ -1,10 +1,37 @@
+@import './variables.scss';
+
+
+
+#app{
+    display: flex;
+}
+
+
+.main__menu{
+    display: none;
+
+
+    @media (min-width: $desktop-width) {
+        display: flex;
+        height: 100vh;
+        background-color: rosybrown;
+        width: 320px;
+    }
+}
+
+.header{
+
+
+    @media (min-width: $desktop-width) {
+        display: none;
+    }
+}
 .header__navigation{
     display: flex;
     padding: 24px 0 0 0;
     height: 88px;
     width: 100%;
     justify-content: space-between;
-    border-bottom: 2px solid red;
 }
 .header__menu{
     height: 40px;
@@ -12,29 +39,42 @@
     border: none;
     border-radius: 100%;
     background-color: #ff3e79;
-    margin-left: 21px;
+    margin-left: 16px;
     max-width: 40px;
     max-height: 40px;
     justify-content: center;
     align-items: center;
+}
+.tablet__square{
+    display: none;
+
+    @media (min-width: $tablet-width) {
+    width: 2px;
+    height: 32px;
+    background-color:#EAEAEA ;
+    display: flex;
+    }
 }
 .header__logo{
     background-color: white;
     border: none;
-    margin-left: 16px;
-    max-width: 40px;
-    max-height: 40px;
+    max-width: 97px;
+    max-height: 51px;
     justify-content: center;
     align-items: center;
+    padding: 0;
 }
 #square{
-    margin: 5px 0 0 80px;
     width: 2px;
     height: 32px;
     background-color:#EAEAEA ;
+    display: flex;
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+    
 }
 .header__support--icon{
-    margin-left: 16px;
     height: 40px;
     width: 40px;
     border-radius: 100%;
@@ -46,7 +86,7 @@
     align-items: center;
 }
 .header__search{
-    margin-left: 16px;
+    margin: 0 16px 0 0;
     height: 40px;
     width: 40px;
     border-radius: 100%;
@@ -58,8 +98,7 @@
     align-items: center;
 }
 .header__separation{
-    margin-top: 24px;
-    width: 320px;
+    width: 100vw;
     height: 1px;
     --shadow__color: #d9fff5;
     background-color: var(--shadow__color);
@@ -78,3 +117,15 @@
     font-weight: 700;
     padding: 16px 0px 0px 16px;
 }
+
+
+
+.header__action{
+    display: none;
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+    }
+
+}
+
