@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@import url(./variables.scss);
 
 #app {
   display: flex;
@@ -131,37 +131,47 @@
     width: 180px;
   }
 }
-.header__call{
-    justify-content: center;
-    align-items: center;
-    background-color: #ff3e79;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    border: none;
+.header__call {
+  justify-content: center;
+  align-items: center;
+  background-color: #ff3e79;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: none;
 }
-.header__chat{
-    justify-content: center;
-    align-items: center;
-    background-color: #ff3e79;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    border: none;
+.header__chat {
+  justify-content: center;
+  align-items: center;
+  background-color: #ff3e79;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: none;
 }
-.header__profile{
-    padding: 0%;
-    justify-content: center;
-    align-items: center;
-    background-color: #ff3e79;
-    max-width: 40px;
-    max-height: 40px;
-    border-radius: 100%;
-    border: none;
+.header__profile {
+  padding: 0%;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff3e79;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 100%;
+  border: none;
 }
-.header__left--icon{
+.header__left--icon {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-content: flex-start;
     width: 200px;
+  }
+}
+.header__right--icon {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: 350px;
+  }
 }
