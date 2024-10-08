@@ -16,14 +16,21 @@
 
 .main__menu--opened {
   display: flex;
+  flex-direction: column;
+}
+.main__menu--header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
 }
 .burger__close {
+  margin-left: 24px;
   height: 40px;
   width: 40px;
   border: none;
   border-radius: 100%;
   background-color: #ff3e79;
-  margin: 24px 0 0 24px;
   @media (min-width: $desktop-width) {
     display: none;
   }
@@ -32,8 +39,8 @@
   background-color: white;
   max-height: 57px;
   max-width: 110px;
-  margin: 16px 0 0 16px;
   border: none;
+  padding-top: 3px;
 }
 .main__menu--search {
   height: 40px;
@@ -41,10 +48,65 @@
   border: none;
   border-radius: 100%;
   background-color: #ff3e79;
-  margin: 24px 0 0 66px;
+  margin-left: 80px;
   @media (min-width: $desktop-width) {
     margin: 24px 0 0 130px;
   }
+}
+.main__menu--text{
+  font-family: "TT Lakes";
+  list-style: none;
+  padding: 16px 0 0 24px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+.main__menu--icons{
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0 0 24px;
+  width: 160px;
+}
+.main__menu--call{
+  justify-content: center;
+  align-items: center;
+  background-color: #ff3e79;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: none;
+}
+.main__menu--chat{
+  justify-content: center;
+  align-items: center;
+  background-color: #ff3e79;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: none;
+}
+.main__menu--profile{
+  padding: 0%;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff3e79;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 100%;
+  border: none;
+}
+.main__menu--eMail{
+  display: flex;
+  font-family: "TT Lakes";
+  list-style: none;
+  flex-direction: column;
+}
+.main__menu--eMail--items{
+  display: flex;
+  padding: 0 0 0 24px;
+  font-family: "TT Lakes";
+  list-style: none;
+  flex-direction: column;
 }
 .header {
   @media (min-width: $desktop-width) {
@@ -87,7 +149,6 @@
   max-height: 51px;
   justify-content: center;
   align-items: center;
-  padding: 0;
 }
 #square {
   width: 2px;
@@ -179,44 +240,43 @@
   border: none;
 }
 .header__left--icon {
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-content: flex-start;
     width: 200px;
   }
-  width: 170px;
-  display: flex;
-  justify-content: space-between;
 }
 .header__right--icon {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-content: flex-start;
     width: 320px;
   }
-  width: 120px;
-  display: flex;
-  justify-content: space-between;
 }
-.hero{
+.hero {
   @media (min-width: $desktop-width) {
     display: flex;
-    
   }
 }
 .herobox--menu {
   display: flex;
   position: fixed;
-  margin: 16px 0 0 0;
+  margin: 16px 0 0 2px;
   width: 4px;
   height: 40px;
   background-color: #41f6d7;
-  border-radius: 0 4px 4px 0;
+  border-radius: 4px;
   @media (min-width: $desktop-width) {
     display: flex;
-    margin-left:320px ;
+    margin-left: 320px;
   }
 }
 .herobox--text {
