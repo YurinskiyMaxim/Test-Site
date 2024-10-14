@@ -1,5 +1,7 @@
 @import "./variables.scss";
 
+@import "./Colors.scss";
+
 #app {
   display: flex;
 }
@@ -31,20 +33,22 @@
   align-items: center;
   justify-content: space-between;
   height: 88px;
+  max-height: 88px;
   @media (min-width: $desktop-width) {
     display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 88px;
+    align-items: center;
+    justify-content: space-between;
+    height: 88px;
   }
 }
 .burger__close {
-  margin-left: 24px;
+  margin-left: 16px;
   height: 40px;
   width: 40px;
+  padding-top: $icon--padding;
   border: none;
   border-radius: 100%;
-  background-color: #ff3e79;
+  background-color: $icon--color;
   @media (min-width: $desktop-width) {
     display: none;
   }
@@ -62,7 +66,8 @@
   width: 40px;
   border: none;
   border-radius: 100%;
-  background-color: #ff3e79;
+  background-color: $icon--color;
+  padding-top: $icon--padding;
   margin-right: 24px;
 }
 .main__menu--text {
@@ -74,7 +79,10 @@
   row-gap: 24px;
 }
 .main__menu--support{
-  margin-top: auto;
+  @media (min-width: $desktop-width) {
+    margin-top: auto;
+  }
+
 }
 .main__menu--icons {
   display: flex;
@@ -88,7 +96,8 @@
 .main__menu--call {
   justify-content: center;
   align-items: center;
-  background-color: #ff3e79;
+  background-color: $icon--color;
+  padding-top: $icon--padding;
   width: 40px;
   height: 40px;
   border-radius: 100%;
@@ -97,7 +106,8 @@
 .main__menu--chat {
   justify-content: center;
   align-items: center;
-  background-color: #ff3e79;
+  background-color: $icon--color;
+  padding-top: $icon--padding;
   width: 40px;
   height: 40px;
   border-radius: 100%;
@@ -107,7 +117,8 @@
   padding: 0%;
   justify-content: center;
   align-items: center;
-  background-color: #ff3e79;
+  background-color: $icon--color;
+  padding-top: $icon--padding;
   max-width: 40px;
   max-height: 40px;
   border-radius: 100%;
@@ -160,8 +171,9 @@
   width: 40px;
   border: none;
   border-radius: 100%;
-  background-color: #ff3e79;
-  margin-left: 24px;
+  background-color: $icon--color;
+  padding-top: $icon--padding;
+  margin-left: 16px;
   max-width: 40px;
   max-height: 40px;
   justify-content: center;
@@ -173,7 +185,7 @@
   @media (min-width: $tablet-width) {
     width: 2px;
     height: 32px;
-    background-color: #eaeaea;
+    background-color: $square--color;
     display: flex;
   }
 }
@@ -182,13 +194,14 @@
   border: none;
   max-width: 97px;
   max-height: 51px;
+  padding: auto;
   justify-content: center;
-  align-items: center;
-}
+  margin-bottom: 2px;
+} 
 #square {
   width: 2px;
   height: 32px;
-  background-color: #eaeaea;
+  background-color: $square--color;
   display: flex;
   margin-top: 30px;
   @media (min-width: $tablet-width) {
@@ -202,7 +215,7 @@
     display: flex;
     width: 2px;
     height: 32px;
-    background-color: #eaeaea;
+    background-color: $square--color;
   }
 }
 .header__support--icon {
@@ -210,19 +223,21 @@
   width: 40px;
   border-radius: 100%;
   border: none;
-  background-color: #ff3e79;
+  background-color: $icon--color;
+  padding-top: $icon--padding;
   max-width: 40px;
   max-height: 40px;
   justify-content: center;
   align-items: center;
 }
 .header__search {
-  margin: 0 16px 0 0;
+  margin: 0 24px 0 0;
   height: 40px;
   width: 40px;
   border-radius: 100%;
   border: none;
-  background-color: #ff3e79;
+  background-color: $icon--color;
+  padding-top: $icon--padding;
   max-width: 40px;
   max-height: 40px;
   justify-content: center;
@@ -231,7 +246,7 @@
 .header__separation {
   width: 100vw;
   height: 1px;
-  --shadow__color: #d9fff5;
+  --shadow__color: $seporator--color;
   background-color: var(--shadow__color);
   @media (min-width: $desktop-width) {
     display: none;
@@ -250,7 +265,8 @@
 .header__call {
   justify-content: center;
   align-items: center;
-  background-color: #ff3e79;
+  background-color: $icon--color;
+  padding-top: $icon--padding;
   width: 40px;
   height: 40px;
   border-radius: 100%;
@@ -259,7 +275,8 @@
 .header__chat {
   justify-content: center;
   align-items: center;
-  background-color: #ff3e79;
+  background-color: $icon--color;
+  padding-top: $icon--padding;
   width: 40px;
   height: 40px;
   border-radius: 100%;
@@ -269,7 +286,7 @@
   padding: 0%;
   justify-content: center;
   align-items: center;
-  background-color: #ff3e79;
+  background-color: $icon--color;
   max-width: 40px;
   max-height: 40px;
   border-radius: 100%;
@@ -312,7 +329,7 @@
   margin: 16px 0 0 2px;
   width: 4px;
   height: 40px;
-  background-color: #41f6d7;
+  background-color: $herobox__menu--color;
   border-radius: 4px;
   @media (min-width: $desktop-width) {
     display: flex;
