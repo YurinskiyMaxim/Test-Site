@@ -18,26 +18,15 @@
     height: 100%;
     background-color: white;
     width: 320px;
-<<<<<<< HEAD
     z-index: 1;
-=======
-    z-index: 2;
->>>>>>> a6b1ee0 (some fixes)
     position: fixed;
     flex-direction: column;
   }
 }
 
 .main__menu--opened {
-<<<<<<< HEAD
   display: flex;
   flex-direction: column;
-=======
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 0 50px 0 black;
->>>>>>> a6b1ee0 (some fixes)
 }
 .main__menu--header {
   display: flex;
@@ -71,10 +60,6 @@
   border: none;
   padding-top: 3px;
   margin-right: 56px;
-<<<<<<< HEAD
-=======
-  margin-left: 24px;
->>>>>>> a6b1ee0 (some fixes)
 }
 .main__menu--search {
   height: 40px;
@@ -93,20 +78,14 @@
   flex-direction: column;
   row-gap: 24px;
 }
-<<<<<<< HEAD
 .main__menu--support{
-<<<<<<< HEAD
   @media (min-width: $desktop-width) {
     margin-top: auto;
-=======
-=======
-.main__menu--support {
->>>>>>> 2019491 (Herobox__update)
   margin-top: auto;
   @media (min-width: $desktop-width) {
     margin-bottom: 16px;
->>>>>>> a6b1ee0 (some fixes)
   }
+}
 }
 .main__menu--icons {
   display: flex;
@@ -142,10 +121,7 @@
   justify-content: center;
   align-items: center;
   background-color: $icon--color;
-<<<<<<< HEAD
   padding-top: $icon--padding;
-=======
->>>>>>> a6b1ee0 (some fixes)
   max-width: 40px;
   max-height: 40px;
   border-radius: 100%;
@@ -269,7 +245,6 @@
   justify-content: center;
   align-items: center;
 }
-<<<<<<< HEAD
 .header__separation {
   width: 100vw;
   height: 1px;
@@ -279,8 +254,6 @@
     display: none;
   }
 }
-=======
->>>>>>> a6b1ee0 (some fixes)
 
 .header__action {
   display: none;
@@ -347,8 +320,6 @@
     width: 320px;
   }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 .hero {
   @media (min-width: $desktop-width) {
     display: flex;
@@ -380,11 +351,7 @@
     width: 350px;
   }
 }
-=======
-.conteiner{
-=======
 .conteiner {
->>>>>>> 2019491 (Herobox__update)
   display: flex;
   z-index: 1;
   background-color: $conteiner--bgcolor;
@@ -439,15 +406,9 @@
 }
 .herobox__menu--support-Application-stat {
   display: flex;
-<<<<<<< HEAD
   padding: 0%;
   z-index: 2;
   justify-content: space-between;
-  color: $text__slider--color;
-}
->>>>>>> a6b1ee0 (some fixes)
-=======
-  font-family: "TT Lakes";
 }
 .herobox__menu-support-Application--icon {
   background-color: $icon--color;
@@ -471,4 +432,3 @@
   border-radius: 100%;
   border: none;
 }
->>>>>>> 2019491 (Herobox__update)
