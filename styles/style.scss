@@ -167,8 +167,8 @@
 }
 .header {
   width: 100vw;
-  height: 100vh;
-  background-color: #F8F8F8;
+  height: 100%;
+  background-color: #f8f8f8;
   @media (min-width: $desktop-width) {
     padding: 24px 0 0 320px;
   }
@@ -336,7 +336,6 @@
 }
 .hero {
   display: flex;
-  
 }
 .herobox--menu {
   display: flex;
@@ -347,7 +346,6 @@
   border-radius: 4px;
   @media (min-width: $desktop-width) {
     display: flex;
-
   }
 }
 .herobox--text {
@@ -496,8 +494,8 @@
     width: 360px;
     height: 208px;
     display: flex;
-    position: fixed;
-    margin-left: 384px;
+    position: relative;
+    margin: 6px 0 0 384px;
     border-radius: 10px;
   }
   @media (min-width: $desktop-width) {
@@ -506,11 +504,11 @@
     margin-left: 560px;
   }
 }
-.herobox__CPS-picture--phone{
+.herobox__CPS-picture--phone {
   width: 320px;
   height: 176px;
   display: flex;
-  margin-top: 16px ;
+  margin-top: 16px;
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -520,10 +518,21 @@
   height: 2px;
   background-color: $seporator--color;
   margin: 24px 0 0 0;
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: 73px 0 0 0;
   }
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     margin: 153px 0 0 0;
   }
+}
+.shapcka {
+  display: flex;
+  align-items: center;
+  padding-left: 32px;
+  background: linear-gradient(90deg, rgb(248, 248, 248), rgb(255, 255, 255));
+  font-family: "TT Lakes";
+  text-transform: uppercase;
+  color: #7e7e82;
+  width: 100vw;
+  height: 56px;
 }
