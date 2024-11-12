@@ -169,7 +169,7 @@
   width: 100%;
   height: 100vh;
   background-color: #f8f8f8;
-  
+
   @media (min-width: $desktop-width) {
     padding: 24px 0 0 320px;
     box-sizing: border-box;
@@ -496,14 +496,19 @@
     width: 360px;
     height: 208px;
     display: flex;
-    position: relative;
+    position: absolute;
     margin: 6px 0 0 384px;
     border-radius: 10px;
   }
   @media (min-width: $desktop-width) {
-    width: 530px;
-    height: 292px;
+    width: auto;
+    height: auto;
+    max-width: 530px;
+    max-width: 292px;
     margin-left: 560px;
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
   }
 }
 .herobox__CPS-picture--phone {
@@ -516,25 +521,27 @@
   }
 }
 .herobox__separation {
-  width: 100vw;
+  width: 100%;
+  box-sizing: border-box;
   height: 2px;
   background-color: $seporator--color;
   margin: 24px 0 0 0;
   @media (min-width: $tablet-width) {
-    margin: 73px 0 0 0;
+    margin: 103px 0 0 0;
   }
   @media (min-width: $desktop-width) {
-    margin: 153px 0 0 0;
+    margin: 183px 0 0 0;
   }
 }
 .shapcka {
   display: flex;
+  box-sizing: border-box;
   align-items: center;
   padding-left: 32px;
   background: linear-gradient(90deg, rgb(248, 248, 248), rgb(255, 255, 255));
   font-family: "TT Lakes";
   text-transform: uppercase;
   color: #7e7e82;
-  width: 100vw;
+  width: 100%;
   height: 56px;
 }
