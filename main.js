@@ -8,3 +8,10 @@ burger.addEventListener("click", () => {
     main__menu.classList.remove("main__menu--opened");
   });
 });
+
+/* const swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+ */

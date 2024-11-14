@@ -213,31 +213,126 @@
           <div class="shapcka">Ремонт техники различных брендов</div>
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"> <img src="./IMG/For_Swiper/Bitmap.svg" alt=""> <img src="./IMG/For_Swiper/go.svg" alt=""></div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              <div class="swiper-slide">Slide 4</div>
-              <div class="swiper-slide">Slide 5</div>
-              <div class="swiper-slide">Slide 6</div>
-              <div class="swiper-slide">Slide 7</div>
-              <div class="swiper-slide">Slide 8</div>
-              <div class="swiper-slide">Slide 9</div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide__img0"
+                  src="./IMG/For_Swiper/Lenovo.svg"
+                  alt="Lenovo"
+                />
+                <img
+                  class="swiper-slide__button"
+                  src="./IMG/For_Swiper/Button.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide__img1"
+                  src="./IMG/For_Swiper/Samsung.png"
+                  alt=""
+                />
+                <img
+                  class="swiper-slide__button"
+                  src="./IMG/For_Swiper/Button.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide__img2"
+                  src="./IMG/For_Swiper/Apple.svg"
+                  alt=""
+                />
+                <img
+                  class="swiper-slide__button"
+                  src="./IMG/For_Swiper/Button.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide__img2"
+                  src="./IMG/For_Swiper/ViewSonic.png"
+                  alt=""
+                />
+                <img
+                  class="swiper-slide__button"
+                  src="./IMG/For_Swiper/Button.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide__img3"
+                  src="./IMG/For_Swiper/Bosch.svg"
+                  alt=""
+                />
+                <img
+                  class="swiper-slide__button"
+                  src="./IMG/For_Swiper/Button.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide__img4"
+                  src="./IMG/For_Swiper/HP.svg"
+                  alt=""
+                />
+                <img
+                  class="swiper-slide__button"
+                  src="./IMG/For_Swiper/Button.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide__img5"
+                  src="./IMG/For_Swiper/ACER.svg"
+                  alt=""
+                />
+                <img
+                  class="swiper-slide__button"
+                  src="./IMG/For_Swiper/Button.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide__img5"
+                  src="./IMG/For_Swiper/SONY.svg"
+                  alt=""
+                />
+                <img
+                  class="swiper-slide__button"
+                  src="./IMG/For_Swiper/Button.svg"
+                  alt=""
+                />
+              </div>
             </div>
             <div class="swiper-pagination"></div>
           </div>
-
-          
         </div>
       </main>
     </div>
   </body>
   <script src="./main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-          <script>
-            var swiper = new Swiper(".mySwiper", {
-              pagination: {
-                el: ".swiper-pagination",
-              },
-            });
-          </script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+
+      loop: true,
+      breakpoints: {
+        1119: {
+          slidesPerColumn: 2,
+          autoHeight: true,
+          loop: false,
+        },
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
 </html>

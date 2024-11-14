@@ -4,6 +4,8 @@
 
 @import "./Slider.scss";
 
+@import "/styles/swiper.scss";
+
 #app {
   display: flex;
   position: relative;
@@ -19,7 +21,7 @@
   height: 100vh;
   background-color: white;
   width: 320px;
-  z-index: 1;
+  z-index: 1920;
   position: fixed;
   @media (min-width: $desktop-width) {
     display: flex;
@@ -173,6 +175,7 @@
   @media (min-width: $desktop-width) {
     padding: 24px 0 0 320px;
     box-sizing: border-box;
+    min-height: 200%;
   }
 }
 .header__navigation {
@@ -504,7 +507,7 @@
     width: auto;
     height: auto;
     max-width: 530px;
-    max-width: 292px;
+    max-height: 292px;
     margin-left: 560px;
     box-sizing: border-box;
     display: flex;
