@@ -1,0 +1,93 @@
+.dataTable {
+    display: block;
+    width: 100%;
+    margin: 1em 0;
+  }
+  
+  .dataTable thead, .dataTable tbody, .dataTable thead tr, .dataTable th {
+    display: block;
+  }
+  
+  .dataTable thead {
+    float: left;
+  }
+  
+  .dataTable tbody {
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+  }
+  
+  .dataTable td, .dataTable th {
+    padding-left: 24px;
+    align-items: center;
+    line-height: 64px;
+    border-bottom:1px solid #EAEAEA;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  .dataTable th {
+    font-family: "TT Lakes";
+    color: #7E7E82;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 24px;
+    background-color: #F8F8F8;
+    text-align: left;
+    
+  }
+  
+  .dataTable tbody tr {
+    display: table-cell;
+  }
+  
+  .dataTable tbody td {
+    display: block;
+    
+  }
+  
+  .dataTable tr:nth-child(odd) {
+      background: rgba(0, 0, 0, 0.07);
+  }
+  
+  .button_action{
+    font-family: "TT Lakes";
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: flex;
+    width: 119px;
+    height: 32px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF3E79;
+    border: none;
+    border-radius: 16px;
+    padding-left:16px ;
+  }
+    .dataTable {
+      display: table;
+    }
+    
+    .dataTable thead {
+      display: table-header-group;
+      float: none;
+    }
+    
+    .dataTable tbody {
+      display: table-row-group;
+    }
+    
+    .dataTable thead tr, .dataTable tbody tr {
+      display: table-row;
+    }
+    
+    .dataTable th, .dataTable tbody td {
+      display: table-cell;
+    }
+    
+    .dataTable td, .dataTable th {
+      width: auto;
+    }

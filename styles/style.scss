@@ -6,6 +6,8 @@
 
 @import "/styles/swiper.scss";
 
+@import "./Table.scss";
+
 #app {
   display: flex;
   position: relative;
@@ -169,7 +171,7 @@
 }
 .header {
   width: 100%;
-  height: 100vh;
+  height: 300%;
   background-color: #f8f8f8;
 
   @media (min-width: $desktop-width) {
@@ -523,6 +525,23 @@
     display: none;
   }
 }
+.herobox__show_all--icon {
+  @media (min-width: $tablet-width) {
+    margin: 24px 0 0 24px;
+    display: flex;
+  }
+  display: none;
+}
+.herobox__show_all {
+  @media (min-width: $tablet-width) {
+    font-family: "TT Lakes";
+    display: flex;
+    margin: -14px 0 0 45px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  display: none;
+}
 .herobox__separation {
   width: 100%;
   box-sizing: border-box;
@@ -547,4 +566,37 @@
   color: #7e7e82;
   width: 100%;
   height: 56px;
+}
+.shapcka2 {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  padding-left: 32px;
+  background: linear-gradient(90deg, rgb(248, 248, 248), rgb(255, 255, 255));
+  font-family: "TT Lakes";
+  text-transform: uppercase;
+  color: #7e7e82;
+  width: 100%;
+  height: 56px;
+}
+.herobox__separation2 {
+  width: 100%;
+  box-sizing: border-box;
+  height: 2px;
+  background-color: $seporator--color;
+  margin: 24px 0 0 0;
+}
+.herobox__separation3 {
+  width: 100%;
+  box-sizing: border-box;
+  height: 2px;
+  background-color: $seporator--color;
+  margin: 50px 0 0 0;
+}
+.herobox__show_all_2--icon {
+  display: none;
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 24px;
+    display: flex;
+  }
 }

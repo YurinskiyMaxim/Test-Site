@@ -14,8 +14,9 @@ body {
 
 .swiper {
   width: 100%;
-  min-height: 120px;
-  box-sizing: border-box ;
+  min-height: 240px;
+  height: auto;
+  box-sizing: border-box;
   z-index: 1 !important;
 }
 
@@ -48,4 +49,26 @@ body {
   background: #dddddd;
   width: 12px;
   height: 12px;
+}
+
+
+.swiper-slide_tech {
+  width: 240px !important;
+  height: 160px !important;
+  margin: 16px 0 0 16px !important;
+  border-radius: 6px;
+  padding: 16px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.swiper-slide__button_tech {
+  padding-top: 104px;
+  max-width: 40px;
+  max-height: 40px;
 }
