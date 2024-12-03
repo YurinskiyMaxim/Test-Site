@@ -318,9 +318,9 @@
           <div class="herobox__show_all">Показать все</div>
           <div class="herobox__separation2"></div>
           <div class="shapcka">Ремонт техники различных видов техники</div>
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide_tech">
+          <div class="swiper mySwiper mySwiper_tech">
+            <div class="swiper-wrapper swiper-wrapper_tech">
+              <div class="swiper-slide swiper-slide_tech">
                 Ремонт ноутбуков
                 <img
                   class="swiper-slide__button_tech"
@@ -328,7 +328,7 @@
                   alt=""
                 />
               </div>
-              <div class="swiper-slide_tech">
+              <div class="swiper-slide swiper-slide_tech">
                 Ремонт планшетов
                 <img
                   class="swiper-slide__button_tech"
@@ -336,7 +336,7 @@
                   alt=""
                 />
               </div>
-              <div class="swiper-slide_tech">
+              <div class="swiper-slide swiper-slide_tech">
                 Ремонт ПК
                 <img
                   class="swiper-slide__button_tech"
@@ -344,7 +344,7 @@
                   alt=""
                 />
               </div>
-              <div class="swiper-slide_tech">
+              <div class="swiper-slide swiper-slide_tech">
                 Ремонт мониторов
                 <img
                   class="swiper-slide__button_tech"
@@ -352,8 +352,9 @@
                   alt=""
                 />
               </div>
+            
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination swiper-pagination__tech"></div>
           </div>
           <div class="herobox__show_all_2--icon">
             <img src="./IMG/RM-icon.svg" alt="read more" />
@@ -361,6 +362,30 @@
           <div class="herobox__show_all">Показать все</div>
           <div class="herobox__separation3"></div>
           <div class="shapcka">Цены на услуги</div>
+
+
+
+          <div class="swiper mySwiper mySwiper_services">
+            <div class="swiper-wrapper swiper-wrapper_services">
+              <ul class="swiper-slide swiper-slide_services">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <ul class="swiper-slide swiper-slide_services">Slide 2</ul>
+              <ul class="swiper-slide swiper-slide_services">Slide 3</ul>
+              <ul class="swiper-slide swiper-slide_services">Slide 4</ul>
+              <ul class="swiper-slide swiper-slide_services">Slide 5</ul>
+              <ul class="swiper-slide swiper-slide_services">Slide 6</ul>
+              <ul class="swiper-slide swiper-slide_services">Slide 7</ul>
+              <ul class="swiper-slide swiper-slide_services">Slide 8</ul>
+              <ul class="swiper-slide swiper-slide_services">Slide 9</ul>
+            </div>
+            <div class="swiper-pagination swiper-pagination_services"></div>
+          </div>
+
+
+
           <table class="dataTable">
             <thead>
                 <tr>
@@ -372,43 +397,53 @@
               <div class="t_body">
                 <tbody>
                     <tr>
-                        <td><div>Диагностика</a></td>
+                        <td><div class="table__first-column">Диагностика</a></td>
                         <td>Бесплатно</td>
                         <td>30 мин</td>
                         <td class="td">
+                          <div class="table__button">
                             <button class="button_action">Заказать <img src="./IMG/For_Table/goside.png" alt=""></button>
+                          </div>
                         </td>
                     </tr>
                     <tr>
-                        <td><div>Замена дисплея</a></td>
+                        <td><div class="table__first-column">Замена дисплея</a></td>
                         <td>1 000 ₽</td>
                         <td>30-120 мин</td>
                         <td class="td">
+                          <div class="table__button">
                             <button class="button_action">Заказать <img src="./IMG/For_Table/goside.png" alt=""></button>
+                          </div>
                         </td>
                     </tr>
                     <tr>
-                        <td><div>Замена полифонического динамика</a></td>
+                        <td><div class="table__first-column">Замена полифонического динамика</a></td>
                         <td>1 000 ₽</td>
                         <td>30-120 мин</td>
                         <td class="td">
+                          <div class="table__button">
                             <button class="button_action">Заказать <img src="./IMG/For_Table/goside.png" alt=""></button>
+                          </div>
                         </td>
                     </tr>
                     <tr>
-                      <td><div>Тестирование с выдачей технического заключения</a></td>
+                      <td><div class="table__first-column">Тестирование с выдачей технического заключения</a></td>
                       <td>1 000 ₽</td>
                       <td>30-120 мин</td>
                         <td class="td">
+                          <div class="table__button">
                             <button class="button_action">Заказать <img src="./IMG/For_Table/goside.png" alt=""></button>
+                          </div>
                         </td>
                     </tr>
                     <tr>
-                      <td><div>Замена программного обеспечения</a></td>
+                      <td><div class="table__first-column">Замена программного обеспечения</a></td>
                       <td>1 000 ₽</td>
                       <td>30-120 мин</td>
                         <td class="td">
+                          <div class="table__button">
                             <button class="button_action">Заказать <img src="./IMG/For_Table/goside.png" alt=""></button>
+                          </div>
                         </td>
                     </tr>
                 </tbody>
@@ -416,7 +451,7 @@
         </table>
         <div class="predbottom">
           <p class="predbottom__text">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p><br>
-          <div class="predbottom__text2">Получить коммерческое предложение<img src="./IMG/Line.svg" alt=""></div>
+          <div class="predbottom__text2">Получить коммерческое предложение<img class="predbottom__text2--img" src="./IMG/Line.svg" alt=""></div>
         </div>
         <div class="bottom__seporation"></div>
         <ul class="bottom">
@@ -431,4 +466,5 @@
   <script src="./main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./Swiper.js"></script>
+  <script src="./Swiper_tech.js"></script>
 </html>

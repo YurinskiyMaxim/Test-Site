@@ -39,11 +39,18 @@ table {
 .dataTable td,
 .dataTable th {
   align-items: center;
-  line-height: 64px;
   border-bottom: 1px solid #eaeaea;
   box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+.dataTable th {
+  line-height: 64px;
+}
+
+.dataTable td {
+  line-height: auto;
 }
 
 .dataTable th {
@@ -85,7 +92,10 @@ table {
 }
 
 .dataTable {
-  display: table;
+display: none;
+  @media (min-width: $tablet-width) {
+    display: table;
+  }
 }
 
 .dataTable thead {
@@ -102,17 +112,23 @@ table {
 .dataTable thead tr,
 .dataTable tbody tr {
   display: table-row;
-  
 }
 
 .dataTable th,
 .dataTable tbody td {
   display: table-cell;
-  padding: 0 24px 0 24px;
-  color: #1B1C21;
+  color: #1b1c21;
 }
 
 .dataTable td,
 .dataTable th {
   width: auto;
+}
+
+.table__first-column{
+  width: 260px;
+  padding: 0 0 0 24px;
+}
+.table__button{
+  padding-right: 24px;
 }
