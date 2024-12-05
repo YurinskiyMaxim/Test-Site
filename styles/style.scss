@@ -179,6 +179,9 @@
   position: fixed;
   box-sizing: border-box;
   right: 0;
+  @media (min-width: $desktop-width) {
+    width: 440px;
+  }
 }
 
 .support__SMS--opened{
@@ -208,6 +211,7 @@
   margin-top: 24px;
   @media (min-width: $desktop-width) {
     margin-top: 0;
+    width: 440px;
   }
 }
 
@@ -252,16 +256,18 @@
   border-radius: 8px;
   box-sizing: border-box;
   padding-left: 16px;
+  width: 288px;
+  margin-left: 16px;
+  @media (min-width: $desktop-width) {
+    width: 376px;
+    margin-left: 32px;
+  }
 }
 
 .support__SMS--input1{
-  width: 288px;
-  margin-left: 16px;
   height: 48px;
 }
 .support__SMS--input2{
-  width: 288px;
-  margin-left: 16px;
   height: 118px;
 }
 
@@ -269,7 +275,7 @@
 .support__SMS--agreement-link{
   font-family: "TT Lakes";
 
-  max-width: 440px;
+  max-width: 376px;
 }
 
 .support__SMS--agreement{
@@ -295,6 +301,9 @@
   text-transform: uppercase;
   font-family: "TT Lakes";
   margin: 19px 0 0 168px;
+  @media (min-width: $desktop-width) {
+    margin: 19px 0 0 270px;
+  }
 }
 
 
