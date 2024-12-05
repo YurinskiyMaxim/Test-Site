@@ -112,6 +112,7 @@ display: none;
 .dataTable thead tr,
 .dataTable tbody tr {
   display: table-row;
+  border: 1px solid #eaeaea;
 }
 
 .dataTable th,
@@ -129,6 +130,8 @@ display: none;
   width: 260px;
   padding: 0 0 0 24px;
 }
+
+
 .table__button{
   padding-right: 24px;
 }
