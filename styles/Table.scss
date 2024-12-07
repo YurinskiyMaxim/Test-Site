@@ -34,6 +34,8 @@ table {
   display: flex !important;
   justify-content: flex-end !important;
   height: 67px;
+  margin-right: 24px;
+  max-width: auto;
 }
 
 .dataTable td,
@@ -49,9 +51,7 @@ table {
   line-height: 64px;
 }
 
-.dataTable td {
-  line-height: auto;
-}
+
 
 .dataTable th {
   font-family: "TT Lakes";
@@ -106,6 +106,7 @@ display: none;
 .dataTable tbody {
   display: table-row-group;
   background-color: white;
+  border-radius: 8px;
   border-collapse: collapse;
 }
 
@@ -126,11 +127,11 @@ display: none;
   width: auto;
 }
 
-.table__first-column{
-  width: 260px;
+.table__first-column--text{
+  width: auto;
   padding: 0 0 0 24px;
+  max-width: 350px;
 }
-
 
 .table__button{
   padding-right: 24px;

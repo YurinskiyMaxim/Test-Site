@@ -44,8 +44,27 @@
         </div>
       </div>
       <div class="support__call">
-        
-      </div>  
+        <div class="support__call--conteiner">
+          <button class="support__call__close"><img src="./IMG/Cross.svg" alt=""></button>
+          <ul class="support__call--text-all">
+            <li class="support__call--seporator">
+            </li>
+            <li class="support__call--text1">
+              Заказать звонок
+            </li>
+          </ul>
+          <ul class="support__call--input-all">
+            <li>
+              <input type="text" class="support__call--input1" placeholder="Телефон">
+            </li>
+          </ul>
+          <div class="support__call--agreement">
+            Нажимая “отправить”, вы даете согласие на <div class="support__call--agreement-link">обработку персональных данных</div> и соглашаетесь с нашей <div class="support__call--agreement-link">политикой конфиденциальности</div>
+          </div>
+          <button class="support__call--button">Отправить <img src="./IMG/For_Table/goside.svg" alt=""></button>
+        </div>
+      </div>
+      
       <aside class="main__menu">
         <div class="main__menu--header">
           <button class="burger__close">
@@ -208,39 +227,42 @@
             </div>
           </div>
           <div>
-            <div class="herobox__CPS-picture">
-              <img src="./IMG/_MG_3223.png" alt="CPS picture" />
-            </div>
-            <div class="herobox__company-info">
-              Мы являемся авторизованным сервисным центром по ремонту техники
-              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-              официальной гарантией производителя.
-            </div>
-            <div class="herobox__company-info--tablet">
-              Мы являемся авторизованным сервисным центром по ремонту техники
-              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-              официальной гарантией производителя. <br />
-              <br />Мы успешно работаем с 1992 года и заслужили репутацию
-              надежного партнера
-            </div>
-            <div class="herobox__company-info--desktop">
-              Мы являемся авторизованным сервисным центром по ремонту техники
-              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-              официальной гарантией производителя.
-              <br />
-              <br />Мы успешно работаем с 1992 года и заслужили репутацию
-              надежного партнера, что подтверждает большое количество постоянных
-              клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
-              и, в свою очередь, советуют нас родным и близким.
-            </div>
-
-            <div class="herobox__read_more--icon">
-              <img src="./IMG/RM-icon.svg" alt="read more" />
-            </div>
-            <div class="herobox__read_more">Читать далее</div>
-          </div>
-          <div class="herobox__CPS-picture--phone">
-            <img src="./IMG/_MG_3223.svg" alt="CPS picture" />
+            <ul class="herobox__CPS--info">
+              <ul class="herobox__CPS--info2">
+                <li class="herobox__company-info--desktop">
+                  Мы являемся авторизованным сервисным центром по ремонту техники
+                  Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                  официальной гарантией производителя.
+                  <br />
+                  <br />Мы успешно работаем с 1992 года и заслужили репутацию
+                  надежного партнера, что подтверждает большое количество постоянных
+                  клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+                  и, в свою очередь, советуют нас родным и близким.
+                </li>
+                <li class="herobox__company-info">
+                  Мы являемся авторизованным сервисным центром по ремонту техники
+                  Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                  официальной гарантией производителя.
+                </li>
+                <li class="herobox__company-info--tablet">
+                  Мы являемся авторизованным сервисным центром по ремонту техники
+                  Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                  официальной гарантией производителя. <br />
+                  <br />Мы успешно работаем с 1992 года и заслужили репутацию
+                  надежного партнера
+                </li>
+                <li class="herobox__read_more--icon">
+                  <img src="./IMG/RM-icon.svg" alt="read more" />
+                </li>
+                <li class="herobox__read_more">Читать далее</li>
+              </ul>
+              <li class="herobox__CPS-picture--phone">
+                <img src="./IMG/_MG_3223.svg" alt="CPS picture" />
+              </li>
+              <li class="herobox__CPS-picture">
+                <img src="./IMG/_MG_3223.png" alt="CPS picture" />
+              </li>
+            </ul>
           </div>
           <div class="herobox__separation"></div>
           <div class="shapcka">Ремонт техники различных брендов</div>
@@ -491,7 +513,7 @@
               <div class="t_body">
                 <tbody>
                     <tr>
-                        <td><div class="table__first-column">Диагностика</a></td>
+                        <td ><div class="table__first-column--text">Диагностика</a></td>
                         <td>Бесплатно</td>
                         <td>30 мин</td>
                         <td class="td">
@@ -501,7 +523,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><div class="table__first-column">Замена дисплея</a></td>
+                        <td><div class="table__first-column--text">Замена дисплея</a></td>
                         <td>1 000 ₽</td>
                         <td>30-120 мин</td>
                         <td class="td">
@@ -511,7 +533,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><div class="table__first-column">Замена полифонического динамика</a></td>
+                        <td><div class="table__first-column--text">Замена полифонического динамика</a></td>
                         <td>1 000 ₽</td>
                         <td>30-120 мин</td>
                         <td class="td">
@@ -521,7 +543,7 @@
                         </td>
                     </tr>
                     <tr>
-                      <td><div class="table__first-column">Тестирование с выдачей технического заключения</a></td>
+                      <td><div class="table__first-column--text">Тестирование с выдачей технического заключения</a></td>
                       <td>1 000 ₽</td>
                       <td>30-120 мин</td>
                         <td class="td">
@@ -531,7 +553,7 @@
                         </td>
                     </tr>
                     <tr>
-                      <td><div class="table__first-column">Замена программного обеспечения</a></td>
+                      <td><div class="table__first-column--text">Замена программного обеспечения</a></td>
                       <td>1 000 ₽</td>
                       <td>30-120 мин</td>
                         <td class="td">
