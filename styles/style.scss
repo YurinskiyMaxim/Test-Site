@@ -264,18 +264,40 @@
   }
 }
 
+.support__SMS--input1 {
+  height: 48px;
+  text-align: left;
+}
+
+.support__SMS--input2 {
+  height: 118px;
+  box-sizing: border-box;
+  text-align: left;
+  line-height: 1.5;
+  overflow: hidden;
+  white-space: pre-wrap;
+  display: block;
+}
+
+.support__SMS--input2::placeholder,
+.support__SMS--input1::placeholder,
+.support__call--input1::placeholder {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.support__SMS--input2:focus::placeholder,
+.support__SMS--input1:focus::placeholder,
+.support__call--input1:focus::placeholder {
+    opacity: 0;
+}
+
 .support__SMS--input2:focus,
 .support__SMS--input1:focus,
 .support__call--input1:focus {
   border: #ff3e79 1px solid;
   outline: #ff3e79 1px solid;
-}
-
-.support__SMS--input1 {
-  height: 48px;
-}
-.support__SMS--input2 {
-  height: 118px;
 }
 
 .support__SMS--agreement,
